@@ -26,22 +26,14 @@ SCRAPY_POET_DISCOVER = [
 
 # duplicate-url-discarder
 DUD_ATTRIBUTES_PER_ITEM = {
-    "zyte_common_items.Product": [
-        "canonicalUrl",
-        "brand",
+    "zyte_spider_templates_project.items.Company": [
+        "detail_url",
         "name",
-        "gtin",
-        "mpn",
-        "productId",
-        "sku",
-        "color",
-        "size",
-        "style",
-    ],
-    "zyte_common_items.Article": [
-        "canonicalUrl",
-        "headline",
-        "datePublishedRaw",
-        "authors",
     ],
 }
+
+# Zyte API settings
+ZYTE_API_KEY = "dd27d34e811c4d829181b09757e7442a"  # Replace with your actual API key
+
+# Scrapy settings
+REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
